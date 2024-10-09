@@ -1,0 +1,79 @@
+/* Basic styles for the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #ffb7ce;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+/* Navigation styling */
+nav {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-bottom: 2px solid #89CFF0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffb7ce;
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#about {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #ffb7ce;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Social Icons */
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
